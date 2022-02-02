@@ -18,6 +18,6 @@ const shoppingSchema = {
 };
 
 const schema = new Schema(shoppingSchema);
-const Shopping = model("Shopping", schema);
+const Shopping = model("shoppingList", schema);
 
 module.exports = Shopping;
