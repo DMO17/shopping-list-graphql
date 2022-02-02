@@ -3,7 +3,11 @@ const shopping = () => {
     name: "Jordans Evens",
     date: "02/02/2022",
     shop: "Tescos",
-    shoppingItems: ["cake", "bread", "white Bread"],
+    items: [
+      { name: "cake", quantity: "1" },
+      { name: "Brown bread", quantity: "3" },
+      { name: "white Bread", quantity: "1" },
+    ],
   };
 };
 

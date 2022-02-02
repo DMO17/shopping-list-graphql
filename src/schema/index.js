@@ -6,7 +6,12 @@ const typeDefs = gql`
     name: String
     date: String
     shop: String
-    items: [String]
+    items: [Item]
+  }
+
+  type Item {
+    name: String
+    quantity: Int
   }
 
   type Query {
