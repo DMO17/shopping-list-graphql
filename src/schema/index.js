@@ -6,12 +6,7 @@ const typeDefs = gql`
     name: String
     date: String
     shop: String
-    items: [Item]
-  }
-
-  type Item {
-    name: String
-    quantity: Int
+    items: [String]
   }
 
   type Query {
@@ -21,3 +16,8 @@ const typeDefs = gql`
 `;
 
 module.exports = typeDefs;
+
+// type Item {
+//   name: String
+//   quantity: Int
+// }
