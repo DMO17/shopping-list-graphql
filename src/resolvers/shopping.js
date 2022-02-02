@@ -1,10 +1,11 @@
-const shopping = () => {
-  return {
-    name: "Gallis Evan",
-    date: "22/02/2022",
-    shop: "Aldi",
-    items: ["Sweets", "bread"],
-  };
+const { Shopping } = require("../models");
+
+const shopping = async (parent, { shoppingItemId }) => {
+  const shoppingItem = await Shopping.findById(shoppingItemId);
+
+  // console.log(shoppingItemId, shoppingItem);
+
+  return shoppingItem;
 };
 
 module.exports = shopping;
