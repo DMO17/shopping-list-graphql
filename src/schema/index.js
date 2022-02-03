@@ -13,6 +13,17 @@ const typeDefs = gql`
     shoppingList: [Shopping]
     shopping(shoppingItemId: ID!): Shopping
   }
+
+  type ShoppingInput {
+    name: String!
+    date: String!
+    shop: String!
+    items: [String!]
+  }
+
+  type Mutation {
+    createShoppingList(input: ShoppingInput): Shopping
+  }
 `;
 
 module.exports = typeDefs;
