@@ -14,15 +14,15 @@ const typeDefs = gql`
     shopping(shoppingItemId: ID!): Shopping
   }
 
-  type ShoppingInput {
+  input ShoppingInput {
     name: String!
     date: String!
     shop: String!
-    items: [String!]
+    items: [String]
   }
 
   type Mutation {
-    createShoppingList(input: ShoppingInput): Shopping
+    createShoppingList(input: ShoppingInput!): Shopping
   }
 `;
 
