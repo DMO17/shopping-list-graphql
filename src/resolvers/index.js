@@ -2,6 +2,7 @@ const shopping = require("./shopping");
 const shoppingList = require("./shoppingList");
 const createShoppingList = require("./createShoppingList");
 const updateOneShoppingList = require("./updateOneShoppingList");
+const deleteShoppingList = require("./deleteShoppingList");
 
 const resolvers = {
   Query: {
@@ -11,6 +12,7 @@ const resolvers = {
   Mutation: {
     createShoppingList,
     updateOneShoppingList,
+    deleteShoppingList,
   },
 };
 
