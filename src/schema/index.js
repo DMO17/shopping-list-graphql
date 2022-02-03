@@ -23,6 +23,7 @@ const typeDefs = gql`
 
   type Mutation {
     createShoppingList(input: ShoppingInput!): Shopping
+    updateOneShoppingList(input: ShoppingInput!, shoppingItemId: ID!): Shopping
   }
 `;
 
